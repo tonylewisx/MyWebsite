@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="Common.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <script>
+$(function(){
+  $("#includeMenu").load("menuTop.html");
+  $("#adverts").load("homeadverts.html");
+  $(".footer2").load("footer.html");
+});
+
+<!-- hide from old browsers
+
+// show me -->
+</script>
+</head>
+<body >
+
+<div id="includeMenu"></div>
+
+<div class="container" >
+  <h2 style="text-align: center;">Contact Form</h2>
+  <form class="form-horizontal"  action="/action_page.php">
+  
+  <div class="form-group">
+   <div class="col-sm-8">
+     <label for="usr">Name:</label>     
+           <input type="text" class="form-control" id="usr">
+     </div>
+    </div>
+     
+    <div class="form-group">
+    <div class="col-sm-8">
+      <label  for="email">Email:</label>  
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+     </div>
+    </div>
+    
+     <div class="form-group">
+     <div class="col-sm-8">
+       <label for="comment">Comment:</label>
+         <textarea class="form-control" rows="5" id="comment"></textarea>
+         </div>
+     </div> 
+     
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        <button type="reset" class="btn btn-primary btn-lg">Clear All</button>
+      </div>
+    </div>
+    
+  </form>
+  
+ 
+  <h4>
+  Call us <br>
++44 (0)xxx xxx xxx <br>
+
+Our phone lines are open 8:30AM to 5:30PM, Monday to Friday. <br>
+You may leave a message outside of these hours.<br>
+</h4>
+
+</div>
+  
+<div class="footer2"> </div>
+  
+  
+<div id="adverts" class="adverts"> </div>
+
+
+</body>
+</html>

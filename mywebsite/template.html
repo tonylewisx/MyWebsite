@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>MyWebsite </title>
+<link rel="stylesheet" href="Common.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+  $("#includeMenu").load("menuTop.html");
+  $("#detail").load("homedetail.html");
+  $("#adverts2").load("homeadverts.html");
+  $(".footer2").load("footer.html");
+});
+
+function load(url) {
+	//$("#main2").load( + url + "#title");
+	$("#detail").load(url);
+}
+<!-- hide from old browsers
+
+// show me -->
+</script>
+</head>
+
+<body>
+<div id="includeMenu"></div>
+<br>
+<br>
+
+<div id="masterindex" class="master">
+Master Index<br>
+ <ul style="list-style-type:none" >
+        <li><a href="#" onclick="load('topic1.html');">topic 1</a>
+        </li>
+        <li><a href="#">topic 2</a>
+        </li>
+        <li><a href="#">topic 3</a>
+        </li>
+        <li><a href="#">topic 4</a>
+        </li>
+        <li><a href="#">topic 5</a>
+        </li>
+        <li><a href="#">topic 6</a>
+        </li>
+        
+        <li><a href="#">topic 2</a>
+        </li>
+        <li><a href="#">topic 3</a>
+        </li>
+        <li><a href="#">topic 4</a>
+        </li>
+        <li><a href="#">topic 5</a>
+        </li>
+        <li><a href="#">topic 6</a>
+        </li>
+        <li><a href="#">topic 2</a>
+        </li>
+        <li><a href="#">topic 3</a>
+        </li>
+        <li><a href="#">topic 4</a>
+        </li>
+        <li><a href="#">topic 5</a>
+        </li>
+        <li><a href="#">topic 6</a>
+        </li>
+        <li><a href="#">topic 2</a>
+        </li>
+        <li><a href="#">topic 3</a>
+        </li>
+        <li><a href="#">topic 4</a>
+        </li>
+        <li><a href="#">topic 5</a>
+        </li>
+        <li><a href="#">topic 6</a>
+        </li>
+        <li><a href="#">topic 2</a>
+        </li>
+        <li><a href="#">topic 3</a>
+        </li>
+        <li><a href="#">topic 4</a>
+        </li>
+        <li><a href="#">topic 5</a>
+        </li>
+        <li><a href="#">topic 6</a>
+        </li>
+        <li><a href="#">topic 2</a>
+        </li>
+        <li><a href="#">topic 3</a>
+        </li>
+        <li><a href="#">topic 4</a>
+        </li>
+        <li><a href="#">topic 5</a>
+        </li>
+        <li><a href="#">topic 6</a>
+        </li>
+ </ul>
+</div>
+
+<div id="detail" class="detail">
+Latest News<br>
+Concerning all topics (with url links to further info)
+</div>
+
+<div id="adverts2" class="adverts2">
+</div>
+
+<div class="footer2"> </div>
+
+</body>
+</html>
+
